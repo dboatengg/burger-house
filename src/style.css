@@ -1,0 +1,195 @@
+/*=====================================(Header)=================================*/
+.header {
+  background-image: url("./assets/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  background-image: url("./assets//glow.png");
+  background-size: cover;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+/*=====================================(Navbar)=================================*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+  position: relative;
+  z-index: 9;
+}
+.navbar__mobile {
+  display: flex;
+  align-items: center;
+}
+.navbar__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.navbar__menu .menu {
+  display: flex;
+  gap: 5rem;
+}
+.navbar__menu .menu li a {
+  letter-spacing: 0.5rem;
+}
+.navbar__menu .top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.navbar__menu .top p {
+  font-size: 1.4rem;
+}
+.navbar__toggle {
+  display: none;
+  font-size: 4rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.navbar__toggle svg {
+  color: var(--brown);
+}
+
+.logo img {
+  width: 20rem;
+}
+@media (max-width: 900px) {
+  .navbar__menu {
+    display: none;
+    position: absolute;
+    /* top: 200%; */
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 4rem 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    max-width: 60rem;
+  }
+  .navbar__menu .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar__toggle {
+    display: block;
+  }
+  .navbar__mobile {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .logo img {
+    width: 15rem;
+  }
+}
+/*=====================================(Hero Section)=================================*/
+.hero {
+  height: calc(100vh - 10rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+.hero__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.hero__image img {
+  width: 95%;
+}
+.hero__image {
+  display: flex;
+  justify-content: flex-end;
+}
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.hero__text p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.4rem;
+  border: 2px dashed var(--brown);
+  padding: 1rem;
+}
+.hero__text h1 {
+  font-size: 9rem;
+  letter-spacing: 0.5rem;
+  text-shadow: 0px 6px 0px var(--shadow) /* shadow for first letter */,
+    0px 6px 0px var(--shadow) /* shadow for second letter */,
+    0px 6px 0px var(--shadow) /* shadow for third letter */,
+    0px 6px 0px var(--shadow) /* shadow for fourth letter */,
+    0px 6px 0px var(--shadow) /* shadow for fifth letter */,
+    0px 6px 0px var(--shadow); /* shadow for sixth letter */
+}
+.hero__text h2 {
+  font-size: 4.5rem;
+  letter-spacing: 0.5rem;
+  text-shadow: 0px 6px 0px var(--shadow) /* shadow for first letter */,
+    0px 6px 0px var(--shadow) /* shadow for second letter */,
+    0px 6px 0px var(--shadow) /* shadow for third letter */,
+    0px 6px 0px var(--shadow) /* shadow for fourth letter */;
+}
+.hero__text h1,
+.hero__text h2 {
+  font-family: "Alfa Slab One", cursive;
+}
+@media (max-width: 900px) {
+  .hero__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .hero__text {
+    align-items: center;
+    text-align: center;
+    order: 2;
+  }
+  .hero__text h1 {
+    font-size: 10rem;
+  }
+  .hero__image img {
+    width: 80%;
+    order: 1;
+  }
+  .hero__image {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .hero__text h1 {
+    font-size: 6rem;
+  }
+  .hero__text p {
+    font-size: 1.8rem;
+  }
+  .hero__text h2 {
+    font-size: 4rem;
+  }
+}
+/*=====================================(Navbar)=================================*/
+
+/*=====================================(Navbar)=================================*/
+
+/*=====================================(Navbar)=================================*/
+
+/*=====================================(Navbar)=================================*/
+
+/*=====================================(Navbar)=================================*/
