@@ -64,6 +64,7 @@
   background-color: transparent;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .navbar__toggle svg {
   color: var(--brown);
@@ -72,12 +73,17 @@
 .logo img {
   width: 20rem;
 }
+.show__nav {
+  top: 100%;
+}
+.hide__nav {
+  top: -500%;
+}
 @media (max-width: 900px) {
   .navbar__menu {
-    display: none;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 25%;
+    transform: translateX(-25%);
     flex-direction: column-reverse;
     align-items: center;
     width: 100%;
@@ -101,6 +107,14 @@
   }
   .logo img {
     width: 15rem;
+  }
+}
+@media (max-width: 480px) {
+  .navbar__menu .top {
+    flex-direction: column;
+  }
+  .navbar__menu .top p {
+    font-size: 1rem;
   }
 }
 /*=====================================(Hero Section)=================================*/
