@@ -16,7 +16,7 @@ const Products = () => {
         </div>
         <div className="product__blocks">
           <div className="product__block">
-            <img src={burgerone} alt="" />
+            <img className="big" src={burgerone} alt="" />
             <h3>Lorem ipsum dolor</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -26,7 +26,7 @@ const Products = () => {
             </a>
           </div>
           <div className="product__block">
-            <img src={burgertwo} alt="" />
+            <img className="small" src={burgertwo} alt="" />
             <h3>Lorem ipsum dolor</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -36,7 +36,7 @@ const Products = () => {
             </a>
           </div>
           <div className="product__block">
-            <img src={burgerone} alt="" />
+            <img className="big" src={burgerone} alt="" />
             <h3>Lorem ipsum dolor</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
