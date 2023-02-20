@@ -135,12 +135,11 @@
 }
 .hero__text p {
   font-family: "Bebas Neue", cursive;
-  font-size: 2.4rem;
   border: 2px dashed var(--brown);
   padding: 1rem;
 }
 .hero__text h1 {
-  font-size: 9rem;
+  font-size: 8rem;
   letter-spacing: 0.5rem;
   text-shadow: 0px 6px 0px var(--shadow) /* shadow for first letter */,
     0px 6px 0px var(--shadow) /* shadow for second letter */,
@@ -252,7 +251,7 @@
   transition: 0.3s ease-in-out;
 }
 .about__three:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
 .about span {
   display: block;
@@ -261,6 +260,10 @@
   position: relative;
   left: 20px;
   top: 20px;
+}
+.try {
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -281,8 +284,66 @@
     grid-row: 3/4;
   }
 }
-/*=====================================(Navbar)=================================*/
-
+/*=====================================(Products)=================================*/
+.product {
+  padding: 4rem 0;
+  text-align: center;
+}
+.product__top h2,
+.product__block a {
+  font-family: "Alfa Slab One", cursive;
+}
+.product__top h4 {
+  font-weight: 400;
+  background-color: var(--yellow);
+  padding: 1rem 3rem;
+}
+.product__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+.product p {
+  font-family: "Montserrat";
+}
+.product__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  row-gap: 8rem;
+}
+.product__block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30%;
+  min-width: 300px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.product__block img {
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.3));
+  margin-bottom: 3rem;
+}
+.product__block h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.product h2 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .product h2 {
+    font-size: 2.5rem;
+  }
+}
 /*=====================================(Navbar)=================================*/
 
 /*=====================================(Navbar)=================================*/
