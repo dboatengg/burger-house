@@ -1,5 +1,7 @@
 # Burger House
 
+![Burger House Homepage](./src/assets/burger-house-home.jpg)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Burger House is a landing page website for a burger company
