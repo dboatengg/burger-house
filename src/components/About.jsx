@@ -7,19 +7,20 @@ const About = () => {
         <div className="about__one">
           <h2>
             <span className="try">TRY IT TODAY</span>
-            <span>MOST POPULAR BURGER</span>
+            <span className="font-big">MOST POPULAR BURGER</span>
           </h2>
         </div>
         <div className="about__two">
           <h2>
-            <span className="try">TRY IT TODAY</span> <span>MOST FUN</span>{" "}
-            <span>MORE TASTE</span>
+            <span className="try">TRY IT TODAY</span>{" "}
+            <span className="font-big">MOST FUN</span>{" "}
+            <span className="font-big">MORE TASTE</span>
           </h2>
         </div>
         <div className="about__three">
           <h2>
-            <span className="try">TRY IT TODAY</span>{" "}
-            <span>FRESH & CHILLI</span>
+            <span className="try">TRY IT TODAY</span>
+            <span className="font-big">FRESH & CHILLI</span>
           </h2>
         </div>
       </div>
