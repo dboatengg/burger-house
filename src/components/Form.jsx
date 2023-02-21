@@ -24,7 +24,7 @@ const Form = () => {
             <input type="text" name="" placeholder="DATE" id="date" />
           </label>
           <label htmlFor="time">
-            <input type="time" name="" placeholder="TIME" id="time" />
+            <input type="datetime" name="" placeholder="TIME" id="time" />
           </label>
           <label htmlFor="people">
             <input type="number" name="" placeholder="PEOPLE" id="people" />
