@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo from "../assets/logo.png";
 import express from "../assets/express.png";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { GrFormClose } from "react-icons/gr";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
         <div className="navbar__content container">
           <div className="navbar__mobile">
             <a href="#" className="logo"><img src={logo} alt="" /></a>
-            <button className="navbar__toggle" onClick={handleClick}><RxHamburgerMenu /></button>
+          <button className="navbar__toggle" onClick={handleClick}>{showNav ? <GrFormClose/> :<RxHamburgerMenu />}</button>
           </div>
           <div className={`navbar__menu ${showNav ? 'show__nav':'hide__nav'}`}>
             <div className="top">

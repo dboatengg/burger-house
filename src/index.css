@@ -9,6 +9,7 @@
   --red: #bf2222;
   --white: #fff;
   --shadow: #fee8bc;
+  --gray: #dcdcdc;
 
   --container: 90%;
 }
@@ -42,6 +43,9 @@ li {
 img {
   max-width: 100%;
   height: auto;
+}
+p {
+  line-height: 1.6;
 }
 h1,
 h2,
