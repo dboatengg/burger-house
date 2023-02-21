@@ -458,11 +458,12 @@
   background-color: var(--gray);
   margin-right: 5px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 .dot.active {
   background-color: var(--yellow);
 }
-@media (max-width: 920px) {
+@media (max-width: 1065px) {
   .card {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -472,8 +473,8 @@
     width: 90%;
   }
   .dot {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     margin-right: 12px;
   }
   .card__left {
@@ -511,6 +512,84 @@
     height: 80rem;
   }
 }
-/*=====================================(Navbar)=================================*/
+/*=====================================(Form)=================================*/
+.form {
+  padding: 7rem 0;
+  position: unset;
+  margin-bottom: 6rem;
+}
+.form__top {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.form__block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  max-width: 65rem;
+  margin: 0 auto;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+.form__block input {
+  width: 100%;
+  padding: 15px 10px;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  outline: none;
+  font-family: "Montserrat", cursive;
+  font-size: 1.6rem;
+}
+.form__block input::placeholder {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.6rem;
+}
+.form__top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+.form__top h2 {
+  font-size: 4.2rem;
+}
+.form__top h4 {
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+.form__top h2,
+.form__block .btn {
+  font-family: "Alfa Slab One", cursive;
+  font-weight: 400;
+}
+.bottle,
+.plate {
+  position: absolute;
+}
+.bottle {
+  right: 80%;
+  width: 18rem;
+}
+.plate {
+  width: 40rem;
+  left: 85%;
+}
 
-/*=====================================(Navbar)=================================*/
+@media (max-width: 660px) {
+  .form__block {
+    grid-template-columns: 1fr;
+  }
+  .form__top h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 1030px) {
+  .form__images {
+    display: none;
+  }
+}
+/*=====================================(Footer)=================================*/
+.footer {
+  overflow: hidden;
+}

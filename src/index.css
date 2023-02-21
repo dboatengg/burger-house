@@ -60,9 +60,12 @@ h3 {
   padding: 1.2rem 6rem;
   color: var(--white);
   border-radius: 4px;
+  text-align: center;
+}
+.btn--scale {
   transform: 0.3s ease-in-out;
 }
-.btn:hover {
+.btn--scale:hover {
   transform: scale(0.98);
 }
 @media (max-width: 768px) {

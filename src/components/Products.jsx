@@ -46,7 +46,7 @@ const Products = () => {
             </p>
             <a
               href=""
-              className="btn"
+              className="btn btn--scale"
               onMouseEnter={() => handleMouseEnter(0)}
               onMouseLeave={() => handleMouseLeave(0)}
             >
@@ -65,7 +65,7 @@ const Products = () => {
             </p>
             <a
               href="#"
-              className="btn shake-btn"
+              className="btn btn--scale"
               onMouseEnter={() => handleMouseEnter(1)}
               onMouseLeave={() => handleMouseLeave(1)}
             >
@@ -84,7 +84,7 @@ const Products = () => {
             </p>
             <a
               href="#"
-              className="btn"
+              className="btn btn--scale"
               onMouseEnter={() => handleMouseEnter(2)}
               onMouseLeave={() => handleMouseLeave(2)}
             >
