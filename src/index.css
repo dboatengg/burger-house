@@ -30,6 +30,11 @@ body {
   font-family: "Bebas Neue", cursive;
   overflow-x: hidden;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 a {
   text-decoration: none;
   color: var(--brown);
