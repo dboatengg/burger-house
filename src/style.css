@@ -122,9 +122,7 @@
 }
 @media (max-width: 480px) {
   .navbar__menu .top {
-    display: flex;
-    align-items: flex-end;
-    gap: 0;
+    display: block;
   }
   .navbar__menu .top img {
     display: none;
