@@ -39,7 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 2rem;
+  gap: 3rem;
 }
 .navbar__menu .menu {
   display: flex;
@@ -477,6 +477,9 @@
   .card__img {
     order: 1;
     height: 300px;
+  }
+  .card__img img {
+    height: 100%;
   }
   .card__left {
     align-items: center;
