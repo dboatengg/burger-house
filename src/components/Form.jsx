@@ -1,6 +1,5 @@
-import bottle from "../assets/bottle.png";
+// import bottle from "../assets/bottle.png";
 import plate from "../assets/plate.png";
-// import bottle from '../assets/bottle.png';
 
 const Form = () => {
   return (
@@ -11,7 +10,7 @@ const Form = () => {
           <h2>BOOK YOUR TABLE</h2>
         </div>
         <div className="form__images">
-          <img className="bottle" src={bottle} alt="" />
+          {/* <img className="bottle" src={bottle} alt="" /> */}
           <img className="plate" src={plate} alt="" />
         </div>
         <form className="form__block">
