@@ -121,14 +121,14 @@
   }
 }
 @media (max-width: 480px) {
+  .navbar__menu .menu {
+    gap: 8rem;
+  }
   .navbar__menu .top {
     display: block;
   }
   .navbar__menu .top {
-    display: none;
-  }
-  .navbar__menu .top {
-    flex-direction: column;
+    display:none;
   }
   .navbar__menu .top p {
     font-size: 1rem;
