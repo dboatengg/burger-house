@@ -17,6 +17,11 @@
   width: 50%;
   height: 50%;
 }
+@media (max-width: 768px) {
+  .header::before {
+    display: none;
+  }
+}
 /*=====================================(Navbar)=================================*/
 .navbar {
   display: flex;
@@ -114,11 +119,16 @@
   .logo img {
     width: 15rem;
   }
+}
+@media (max-width: 480px) {
+  .navbar__menu .top {
+    display: flex;
+    align-items: flex-end;
+    gap: 0;
+  }
   .navbar__menu .top img {
     display: none;
   }
-}
-@media (max-width: 480px) {
   .navbar__menu .top {
     flex-direction: column;
   }
