@@ -472,9 +472,9 @@
     width: 90%;
   }
   .dot {
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
   }
   .card__left {
     order: 2;
