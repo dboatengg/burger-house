@@ -657,7 +657,7 @@
 /*=====================================(Footer)=================================*/
 .footer {
   overflow: hidden;
-  margin: 8rem 0 5rem 0;
+  margin: 8rem 0 3rem 0;
   color: var(--white);
 }
 .footer__content {
