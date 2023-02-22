@@ -38,7 +38,7 @@ const Form = () => {
               id="people"
             />
           </label>
-          <a href="/" className="btn">
+          <a href="#" className="btn">
             FIND A TABLE
           </a>
         </form>
