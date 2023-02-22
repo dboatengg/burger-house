@@ -66,7 +66,7 @@ I welcome contributions from the community! If you find a bug or have a feature 
 
 ## Credit
 
-- [Freepik](https://www.freepik.com)
+- [Freepik]([https://www.freepik.com](https://www.freepik.com/free-psd/american-food-website-app-template_7335301.htm#&position=4&from_view=user))
 
 ## License
 
