@@ -19,14 +19,12 @@ const Navbar = () => {
   }, [menuActive]);
 
   const handleClick = () => {
-    console.log(menuActive);
     setMenuActive(!menuActive);
   };
 
   const handleClickOutsideNavMenu = (event) => {
     if (navRef.current && !navRef.current.contains(event.target)) {
       setMenuActive(false);
-      console.log("you clicked outside");
     }
   };
   const navMenuClassName = `navbar__menu ${
@@ -47,10 +45,10 @@ const Navbar = () => {
                 <p>Express Delivery +1 234 567 890</p>
             </div>
             <ul className="menu">
-                <li onClick={handleClick}><a href="#">HOME</a></li>
-                <li onClick={handleClick}><a href="#">MENU</a></li>
-                <li onClick={handleClick}><a href="#">OUR STORY</a></li>
-                <li onClick={handleClick}><a href="#">CONTACT US</a></li>
+                <li onClick={()=>{setMenuActive(false)}}><a href="#">HOME</a></li>
+                <li onClick={()=>{setMenuActive(false)}}><a href="#">MENU</a></li>
+                <li onClick={()=>{setMenuActive(false)}}><a href="#">OUR STORY</a></li>
+                <li onClick={()=>{setMenuActive(false)}}><a href="#">CONTACT US</a></li>
             </ul>
           </div>
         </div>
