@@ -650,7 +650,6 @@
 }
 /*=====================================(Footer)=================================*/
 .footer {
-  overflow: hidden;
   margin: 8rem 0 5rem 0;
   color: var(--white);
 }
@@ -665,7 +664,7 @@
   flex-direction: column;
 }
 .footer__top .text {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 .footer__top,
 .footer__bottom {
@@ -700,6 +699,12 @@
 .social {
   gap: 1rem;
   cursor: pointer;
+}
+.social svg {
+  transition: 0.15s ease-in-out;
+}
+.social svg:hover {
+  transform: scale(1.12);
 }
 .footer__top .address svg,
 .social {
