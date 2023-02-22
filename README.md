@@ -1,6 +1,6 @@
 # Burger House
 
-![Burger House Homepage](./src/assets/burger-house-home.jpg)
+![Burger House Homepage](./src/assets/burger-house-home.webp)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
