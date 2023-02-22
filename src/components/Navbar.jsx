@@ -46,10 +46,10 @@ const Navbar = () => {
                 <p>Express Delivery +1 234 567 890</p>
             </div>
             <ul className="menu">
-                <li><Link onClick={()=>{setMenuActive(false)}} spy={true} smooth={true} offset={-50} duration={500} to="home">HOME</Link></li>
-                <li><Link onClick={()=>{setMenuActive(false)}} spy={true} smooth={true} offset={-50} duration={500} to="menu">MENU</Link></li>
-                <li><Link onClick={()=>{setMenuActive(false)}} spy={true} smooth={true} offset={-50} duration={500} to="story">OUR STORY</Link></li>
-                <li><Link onClick={()=>{setMenuActive(false)}} spy={true} smooth={true} offset={-50} duration={500} to="contact">CONTACT US</Link></li>
+                <li><Link onClick={()=>{setMenuActive(false)}} spy={true} smooth={true} duration={500} to="home">HOME</Link></li>
+                <li><Link onClick={()=>{setMenuActive(false)}} spy={true} smooth={true} duration={500} to="menu">MENU</Link></li>
+                <li><Link onClick={()=>{setMenuActive(false)}} spy={true} smooth={true} duration={500} to="story">OUR STORY</Link></li>
+                <li><Link onClick={()=>{setMenuActive(false)}} spy={true} smooth={true} duration={500} to="contact">CONTACT US</Link></li>
             </ul>
           </div>
         </div>
