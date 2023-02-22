@@ -8,7 +8,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="footer__content container">
         <div className="footer__top">
           <div className="text">

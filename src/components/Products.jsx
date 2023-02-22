@@ -22,7 +22,7 @@ const Products = () => {
   }
 
   return (
-    <div className="product">
+    <div className="product" id="menu">
       <div className="product__content container">
         <div className="product__top">
           <h4>ALWAYS TASTY BURGER</h4>

@@ -3,7 +3,7 @@ import Hero from "./Hero";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header" id="home">
       <Navbar />
       <Hero />
     </div>

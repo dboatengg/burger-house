@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-scroll";
 
 import logo from "../assets/logo.png";
 import express from "../assets/express.png";
@@ -45,10 +46,10 @@ const Navbar = () => {
                 <p>Express Delivery +1 234 567 890</p>
             </div>
             <ul className="menu">
-                <li onClick={()=>{setMenuActive(false)}}><a href="#">HOME</a></li>
-                <li onClick={()=>{setMenuActive(false)}}><a href="#">MENU</a></li>
-                <li onClick={()=>{setMenuActive(false)}}><a href="#">OUR STORY</a></li>
-                <li onClick={()=>{setMenuActive(false)}}><a href="#">CONTACT US</a></li>
+                <li><Link onClick={()=>{setMenuActive(false)}} spy={true} smooth={true} offset={-50} duration={500} to="home">HOME</Link></li>
+                <li><Link onClick={()=>{setMenuActive(false)}} spy={true} smooth={true} offset={-50} duration={500} to="menu">MENU</Link></li>
+                <li><Link onClick={()=>{setMenuActive(false)}} spy={true} smooth={true} offset={-50} duration={500} to="story">OUR STORY</Link></li>
+                <li><Link onClick={()=>{setMenuActive(false)}} spy={true} smooth={true} offset={-50} duration={500} to="contact">CONTACT US</Link></li>
             </ul>
           </div>
         </div>

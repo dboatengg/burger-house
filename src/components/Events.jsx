@@ -20,7 +20,7 @@ const Events = () => {
   };
 
   return (
-    <div className="events">
+    <div className="events" id="story">
       <div className="card container">
         <div className="card__img">
           <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />

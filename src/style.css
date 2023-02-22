@@ -52,6 +52,7 @@
 }
 .navbar__menu .menu li a {
   letter-spacing: 4px;
+  cursor: pointer;
 }
 .navbar__menu .menu li {
   transition: 0.05s ease-in;

@@ -2,7 +2,7 @@ import heroImage from "../assets/hero__img.png";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
       <div className="hero__content container">
         <div className="hero__text">
           <p>It is a good time for the great taste of burgers</p>

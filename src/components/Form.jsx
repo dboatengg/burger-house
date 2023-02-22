@@ -2,7 +2,7 @@ import plate from "../assets/plate.png";
 
 const Form = () => {
   return (
-    <div className="form">
+    <div className="form" id="contact">
       <div className="form__content container">
         <div className="form__top">
           <h4>RESERVATION</h4>
