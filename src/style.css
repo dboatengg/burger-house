@@ -8,13 +8,13 @@
 .header::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 5%;
   left: 40%;
   background-image: url("./assets//glow.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
-  width: 50%;
+  width: 60%;
   height: 50%;
 }
 @media (max-width: 768px) {
