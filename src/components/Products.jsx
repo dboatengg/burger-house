@@ -1,6 +1,6 @@
 import { useState } from "react";
-import burgerone from "../assets/burger__1.png";
-import burgertwo from "../assets/burger__2.png";
+import burgerone from "../assets/burger__1.webp";
+import burgertwo from "../assets/burger__2.webp";
 
 const Products = () => {
   const [buttonStates, setButtonStates] = useState([false, false, false]);

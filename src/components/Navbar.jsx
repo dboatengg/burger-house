@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-scroll";
 
-import logo from "../assets/logo.png";
-import express from "../assets/express.png";
+import logo from "../assets/logo.webp";
+import express from "../assets/express.webp";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrFormClose } from "react-icons/gr";
 

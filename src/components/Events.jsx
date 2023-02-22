@@ -1,7 +1,7 @@
 import { useState } from "react";
-import upcoming from "../assets/upcoming-events.png";
-import card2 from "../assets/cardtitle2.jpg";
-import card3 from "../assets/cardtitlet3.jpg";
+import upcoming from "../assets/upcoming-events.webp";
+import card2 from "../assets/cardtitle2.webp";
+import card3 from "../assets/cardtitlet3.webp";
 
 const Events = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

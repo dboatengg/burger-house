@@ -1,4 +1,4 @@
-import plate from "../assets/plate.png";
+import plate from "../assets/plate.webp";
 
 const Form = () => {
   return (

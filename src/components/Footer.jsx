@@ -1,4 +1,4 @@
-import logoWhite from "../assets/logo--white.png";
+import logoWhite from "../assets/logo--white.webp";
 import { MdLocationPin } from "react-icons/md";
 import { MdMail } from "react-icons/md";
 import { AiFillInstagram } from "react-icons/ai";
