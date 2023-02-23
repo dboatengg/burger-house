@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { send } from "emailjs-com";
+
 import plate from "../assets/plate.webp";
 
 const Form = () => {
-  const [formData, setFormData] = useState({
+  const [toSend, setToSend] = useState({
     name: "",
     email: "",
     date: "",
@@ -10,17 +12,34 @@ const Form = () => {
     people: "",
   });
 
+  // const [toSend, setToSend] = useState({
+  //   from_name: "",
+  //   to_name: "",
+  //   message: "",
+  //   reply_to: "",
+  // });
+
   const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+    // const { name, value } = event.target;
+    // setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+    setToSend({ ...toSend, [event.target.name]: event.target.value });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(
-      `Your information: ${formData.name}, ${formData.email},${formData.date},${formData.time}, ${formData.people}`
-    );
-    setFormData({ name: "", email: "", date: "", time: "", people: "" });
+    // alert(
+    //   `Your information: ${formData.name}, ${formData.email},${formData.date},${formData.time}, ${formData.people}`
+    // );
+
+    send("service_w353dbo", "template_kmmyiic", toSend, "VIQ9nPHY5RWXpa3qI")
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+    setToSend({ name: "", email: "", date: "", time: "", people: "" });
+    alert("Thank you for booking a table");
   };
 
   return (
@@ -40,7 +59,7 @@ const Form = () => {
               name="name"
               placeholder="NAME"
               id="name"
-              value={formData.name}
+              value={toSend.name}
               autoComplete="off"
               required
               onChange={handleInputChange}
@@ -50,7 +69,7 @@ const Form = () => {
             <input
               type="email"
               name="email"
-              value={formData.email}
+              value={toSend.email}
               placeholder="EMAIL"
               id="email"
               onChange={handleInputChange}
@@ -60,7 +79,7 @@ const Form = () => {
             <input
               type="text"
               name="date"
-              value={formData.date}
+              value={toSend.date}
               placeholder="DATE"
               id="date"
               required
@@ -71,7 +90,7 @@ const Form = () => {
             <input
               type="text"
               name="time"
-              value={formData.time}
+              value={toSend.time}
               placeholder="TIME"
               id="time"
               required
@@ -83,7 +102,7 @@ const Form = () => {
               type="number"
               name="people"
               placeholder="NO. OF PEOPLE"
-              value={formData.people}
+              value={toSend.people}
               id="people"
               required
               onChange={handleInputChange}
