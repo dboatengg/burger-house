@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import upcoming from "../assets/upcoming-events.webp";
 import card2 from "../assets/cardtitle2.webp";
 import card3 from "../assets/cardtitlet3.webp";
@@ -14,6 +14,16 @@ const Events = () => {
     "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,...",
   ];
   const dots = [0, 1, 2];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      // Increment the current index, wrapping around to 0 if we go past the end of the array
+      setCurrentIndex((currentIndex + 1) % images.length);
+    }, 5000);
+
+    // Clear the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, [currentIndex, images.length]);
 
   const handleDotClick = (index) => {
     setCurrentIndex(index);

@@ -536,8 +536,8 @@
     width: 90%;
   }
   .dot {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     margin-right: 12px;
   }
   .card__left {
@@ -607,6 +607,11 @@
 .form__block input::placeholder {
   font-family: "Bebas Neue", cursive;
   font-size: 1.6rem;
+}
+.form__block .btn {
+  border: none;
+  outline: 0;
+  cursor: pointer;
 }
 .form__top {
   display: flex;
