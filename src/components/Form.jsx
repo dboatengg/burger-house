@@ -12,33 +12,22 @@ const Form = () => {
     people: "",
   });
 
-  // const [toSend, setToSend] = useState({
-  //   from_name: "",
-  //   to_name: "",
-  //   message: "",
-  //   reply_to: "",
-  // });
-
   const handleInputChange = (event) => {
-    // const { name, value } = event.target;
-    // setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
     setToSend({ ...toSend, [event.target.name]: event.target.value });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // alert(
-    //   `Your information: ${formData.name}, ${formData.email},${formData.date},${formData.time}, ${formData.people}`
-    // );
 
     send("service_w353dbo", "template_kmmyiic", toSend, "VIQ9nPHY5RWXpa3qI")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
+        setToSend({ name: "", email: "", date: "", time: "", people: "" });
       })
       .catch((err) => {
         console.log("FAILED...", err);
       });
-    setToSend({ name: "", email: "", date: "", time: "", people: "" });
+
     alert("Thank you for booking a table");
   };
 

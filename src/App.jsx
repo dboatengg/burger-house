@@ -5,6 +5,7 @@ import Events from "./components/Events";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
 import "./style.css";
+import "./tailwind.css";
 
 function App() {
   return (
