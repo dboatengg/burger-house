@@ -64,9 +64,9 @@ I welcome contributions from the community! If you find a bug or have a feature 
 - Twitter: [alege_dev](https://www.twitter.com/alege_dev)
 - Instagram: [alege_dev](https://www.instagram.com/alege_dev)
 
-## Credit
+## Design Credit
 
-- [Freepik](https://www.freepik.com/free-psd/american-food-website-app-template_7335301.htm#&position=4&from_view=user)
+- [Freepik - landing page designs](https://www.freepik.com/free-psd/american-food-website-app-template_7335301.htm#&position=4&from_view=user)
 
 ## License
 
