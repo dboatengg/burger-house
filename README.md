@@ -33,19 +33,19 @@ To get started with the project, you'll need to have a basic understanding of HT
 
 1.  Clone the repository:
 
-```node
-git clone https://github.com/dboatengg/easybank.git/
+```
+git clone https://github.com/dboatengg/burger-house.git/
 ```
 
-2.  _Install dependencies:_ Navigate to the project directory and install the dependencies:
+2.  Navigate to the project directory and install the dependencies:
 
-```node
+```
 npm install
 ```
 
-3.  _Run the project:_ After the installation is complete, start the development server:
+3.  Run the project
 
-```node
+```npm
 npm run dev
 ```
 
